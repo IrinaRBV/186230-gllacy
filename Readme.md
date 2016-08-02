@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ирина Рябова](https://up.htmlacademy.ru/htmlcss/14/user/186230).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Половников](https://htmlacademy.ru/profile/alexpol).
 
 ---
 
