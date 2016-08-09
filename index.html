@@ -47,10 +47,23 @@
   			8 812 450-25-25
   		</p>
   	</div>
-  	<div class="slides-img">
+  	<div class="slider">
+      <div class="slide slide1"></div>
+      <div class="slide slide2"></div>
+      <div class="slide slide3"></div>
+    </div>
+    <input type="radio" name="point" id="slide1" checked>
+    <input type="radio" name="point" id="slide2">
+    <input type="radio" name="point" id="slide3">
+    <div class="slides-controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div>
+    <!--
   		<img class="right-img" src="http://placehold.it/150x100" width="150" height="100" alt="Крем-брюле">
   		<img class="left-img" src="http://placehold.it/150x100" width="150" height="100" alt="Пломбир с малиновым джемом">
-  	</div>
+  	</div>-->
   	<div class="slides-name">
   		<h1>
   			Крем-брюле и пломбир с малиновым джемом
@@ -65,7 +78,7 @@
   		<h2>Малинка даром!</h2>
   		<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
   		<img src="http://placehold.it/150x100" width="150" height="100" alt="Малинка">
-  		<button type="button">Хочу варенье!</button>
+  		<a href="#" class="btn-partition">Хочу варенье!</a>
   	</div>
   	<div class="stock-right">
   		<h2>Шоколадки даром!</h2>
@@ -73,7 +86,7 @@
   			При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
   		</p>
   		<img src="http://placehold.it/150x100" width="150" height="100" alt="Шоколадная стружка">
-  		<button type="button">Хочу шоколадки!</button>
+  		<a href="#" class="btn-partition">Хочу шоколадки!</a>
   	</div>
   </section>
   <!--Конец акций-->
@@ -147,7 +160,7 @@
   		</p>
   	    <form class="spread-form" action="https://echo.htmlacademy.ru" method="post">
   	        <input type="email" name="mail" placeholder="Электронная почта">
-  		    <button type="button">Отправить</button>
+  		    <button type="submit">Отправить</button>
   		</form>
   	</div>
   </section>
