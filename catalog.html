@@ -25,7 +25,7 @@
   		</ul>
   	</nav>
   	<div class="search">
-  		<form action="https://echo.htmlacademy.ru" method="post">
+  		<form action="https://echo.htmlacademy.ru" method="get">
   			<input type="search" name="search">
   		</form>
   	</div>
@@ -52,8 +52,8 @@
             <a href="#">Сливочное</a>
           </li>
         </ul> 
-        <h2>Сливочное мороженое</h2>
       </nav>
+        <h2 class="navigation-title">Сливочное мороженое</h2> 
       <div class="mode">
         <p>
           С 10 до 20, ежедневно<br>
@@ -65,17 +65,17 @@
     <section class="filter">
       <div class="filter-line">
         <div class="filter-item">
-          <form class="product-groups" action="https://echo.htmlacademy.ru" method="post">
-          <p>Сортировка</p>
-          <select class="product-groups-item" name="sorting">
-            <option value="popularity" selected="selected">По популярности</option>
-            <option value="cheap">Недорогие</option>
-            <option value="costly">Дорогие</option>
-          </select>
+            <form class="product-groups" action="https://echo.htmlacademy.ru" method="post">
+            <p>Сортировка</p>
+            <select class="product-groups-item" name="sorting">
+              <option value="popularity" selected="selected">По популярности</option>
+              <option value="cheap">Недорогие</option>
+              <option value="costly">Дорогие</option>
+            </select>
         </div>
         <div class="filter-item">
           <p>Цена:100 руб. - 500руб.</p>
-          <input type="rangr" name="price" min="100" max="500">
+          <input type="range" name="price" min="100" max="500">
         </div>
         <div class="filter-item">
           <p>Жирность:</p>
