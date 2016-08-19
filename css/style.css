@@ -35,8 +35,14 @@ h2 {
 }
 
 /*index*/
+.index-logo {
+	float: left;
+	margin-right: 16px;
+	/* Только для оформления сетки */
+    background-color: #FFCC99;
+}
 .main-navigation {
-	width: 853px;
+	width: 800px;
 	float: left;
 	margin-bottom: 20px;
 	/* Только для оформления сетки */
@@ -53,8 +59,7 @@ h2 {
 }
 
 .breadcrumbs {
-	width: 267px;
-	float: left;
+	clear: both;
 	/* Только для оформления сетки */
     background-color: #FFCC99;
 }
@@ -109,6 +114,7 @@ h2 {
 .hit {
 	margin-bottom: 40px;
 	font-size: 0;
+	padding: 0;
 	/* Только для оформления сетки */
 	background-color: #FFCC66;
 }
@@ -116,7 +122,7 @@ h2 {
 .hit-item {
 	display: inline-block;
 	width: 267px;
-	margin-right: 26px;
+	margin-right: 44px;
     font-size: 14px;
 	/* Только для оформления сетки */
 	background-color: #FF9999;
@@ -176,9 +182,6 @@ h2 {
 
 /*catalog*/
 .filter {
-	width: 879px;
-	margin: 0;
-	float: left;
 	font-size: 0;
 	/* Только для оформления сетки */
     background-color: #FFCC66;
@@ -191,8 +194,6 @@ h2 {
 }
 
 .catalog {
-	margin-bottom: 70px;
-	clear: both;
 	margin-bottom: 25px;
 	font-size: 0;
 	/* Только для оформления сетки */
@@ -202,7 +203,7 @@ h2 {
 .catalog-item {
 	display: inline-block;
 	width: 267px;
-	margin-right: 26px;
+	margin-right: 44px;
 	margin-bottom: 40px;
 	vertical-align: top;
 	font-size: 14px;
