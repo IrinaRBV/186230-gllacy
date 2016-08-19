@@ -17,3 +17,265 @@ h2 {
 	color: #ffffff;
 	font-weight: bold;
 }
+
+.clearfix::after {
+    display: table;
+	content: "";
+	clear: both;
+} 
+
+.container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 27px;
+	padding-right: 27px;
+	/*Только для оформления сетки*/
+	background-color: #FF9900;
+}
+
+/*index*/
+.main-navigation {
+	width: 853px;
+	float: left;
+	margin-bottom: 20px;
+	/* Только для оформления сетки */
+    background-color: #FFCC99;
+}
+
+.main-menu li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.below-menu {
+    display: none;
+}
+
+.breadcrumbs {
+	width: 267px;
+	float: left;
+	/* Только для оформления сетки */
+    background-color: #FFCC99;
+}
+
+.menu-crumbs li {
+	display: inline-block;
+}
+
+.user-to {
+	width: 267px;
+	float: right;
+	/* Только для оформления сетки */
+    background-color: #FFCC99;
+}
+
+.mode {
+	width: 267px;
+	float: right;
+	text-align: right;
+	/* Только для оформления сетки */
+    background-color: #FFCC99;
+}
+
+.slides {
+	/* Только для оформления сетки */
+	position: relative;
+    min-height: 500px;
+    background-color: #FFCCCC;
+}
+
+.stock {
+	margin-bottom: 40px;
+	/* Только для оформления сетки */
+	background-color: #FF9999;
+}
+
+.stock-left {
+	float: left;
+    width: 560px;
+    height: 230px;
+    margin-right: 26px;
+	background: url(../img/stock-raspberry.png) no-repeat 0 0;
+}
+
+.stock-right {
+	float: right;
+	width: 560px;
+	height: 230px;
+	background: url(../img/stock-chocolate.png) no-repeat 0 0;
+}
+
+.hit {
+	margin-bottom: 40px;
+	font-size: 0;
+	/* Только для оформления сетки */
+	background-color: #FFCC66;
+}
+
+.hit-item {
+	display: inline-block;
+	width: 267px;
+	margin-right: 26px;
+    font-size: 14px;
+	/* Только для оформления сетки */
+	background-color: #FF9999;
+}
+
+.hit-item:last-child {
+	margin-right: 0;
+}
+
+.info-shop {
+	margin-bottom: 40px;
+	/* Только для оформления сетки */
+    background-color: #FFCC99;
+}
+
+.info-left {
+	width: 560px;
+	float: left;
+	margin-right: 26px;
+	/* Только для оформления сетки */
+    background-color: #FF9999;
+}
+
+.info-right {
+	width: 560px;
+	float: right;
+	/* Только для оформления сетки */
+    background-color: #FF9999;
+}
+
+.news {
+	margin-bottom: 40px;
+	/* Только для оформления сетки */
+	background-color: #FFCCCC;
+}
+
+.news-fresh {
+	width: 560px;
+	float: left;
+	margin-right: 26px;
+	/* Только для оформления сетки */
+    background-color: #FF9999;
+}
+
+.news-spread {
+	width: 560px;
+	float: right;
+	/* Только для оформления сетки */
+    background-color: #FF9999;
+}
+
+.index-content {
+	margin-bottom: 35px;
+	/* Только для оформления сетки */
+    background-color: #FFCC99;
+}
+
+/*catalog*/
+.filter {
+	width: 879px;
+	margin: 0;
+	float: left;
+	font-size: 0;
+	/* Только для оформления сетки */
+    background-color: #FFCC66;
+}
+
+.filter-item {
+    display: inline-block;
+    margin-right: -10px;
+    font-size: 16px;
+}
+
+.catalog {
+	margin-bottom: 70px;
+	clear: both;
+	margin-bottom: 25px;
+	font-size: 0;
+	/* Только для оформления сетки */
+    background-color: #FFCCCC;
+}
+
+.catalog-item {
+	display: inline-block;
+	width: 267px;
+	margin-right: 26px;
+	margin-bottom: 40px;
+	vertical-align: top;
+	font-size: 14px;
+	/* Только для оформления сетки */
+    background-color: #FFCCFF;	
+}
+
+.catalog-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.btn-description {
+	display: none;
+}
+
+.pages {
+	display: block;
+	padding: 5px;
+	text-align: right;
+	/* Только для оформления сетки */
+    background-color: #FFCCFF;	
+}
+ 
+.pages li {
+	display: inline-block;
+}
+
+/*footer*/
+.main-footer {
+	/* Только для оформления сетки */
+    background-color: #FF9999;
+}
+
+.footer-social {
+	width: 267px;
+	float: left;
+	margin-right: 26px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+	text-align: center;
+	/* Только для оформления сетки */
+    background-color: #FF9999;
+}
+
+.footer-data {
+	width: 560px;
+	float: left;
+	margin-right: 26px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	/* Только для оформления сетки */
+    background-color: #FF9999;
+
+}
+
+.data-item {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.data-item a {
+	display: block;
+}
+
+.footer-copyright {
+	width: 267px;
+	float: right;
+	/* Только для оформления сетки */
+    background-color: #FF9999;
+}
