@@ -3,18 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Мороженое "Gllacy"</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
+    <input type="radio" name="toggle" id="btn-1" checked>
+    <input type="radio" name="toggle" id="btn-2">
+    <input type="radio" name="toggle" id="btn-3">
+
+   <div class="site-wrapper">
+     <div class="content-wrapper">
   <!--Шапка страницы-->
-  <header class="main-header">
-  	<div class="container clearfix">
-      <div class="index-logo">
-        <a href="#">
-          <img src="img/logo.svg" width="100" height="50" alt="Gllacy Shop">
-        </a>
-      </div>
+       <header class="main-header">
+  	     <div class="container clearfix">
+         <div class="index-logo">
+           <a href="#">
+             <img src="img/logo.svg" alt="Gllacy Shop">
+           </a>
+         </div>
   	  <nav class="main-navigation">
   		  <ul class="main-menu">
   			  <li>
@@ -37,9 +45,9 @@
   	  </nav>
       <div class="user-to">
       <div class="search">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="search" name="search">
-      </form>
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+        <input type="search" name="search" placeholder="Что ищем?">
+        </form>
       </div>
       <div class="user-block">
         <a class="login" href="#">Вход</a>
@@ -51,7 +59,7 @@
       <div class="mode">
         <p>
           С 10 до 20, ежедневно<br>
-          8 812 450-25-25
+          <span class="number-phone">8 812 450-25-25</span>
         </p>
       </div>
     </div>
@@ -60,40 +68,31 @@
   <!--Содержимое страницы-->
   <main class="container">
   <!--Карусель-->
-  <section class="slides">
   	<div class="slider">
-      <div class="slide slide1"></div>
-      <div class="slide slide2"></div>
-      <div class="slide slide3"></div>
+      <div class="slide" id="slide1">
+        <div class="slide-title">
+          Крем-брюле и пломбир с малиновым джемом
+        </div>
+         <a class="btn slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide" id="slide2">
+         <div class="slide-title">
+            Шоколадный пломбир и лимонный сорбет 
+           </div>
+           <a class="btn slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide" id="slide3">
+        <div class="slide-title">
+          Пломбир с помадкой и клубничный щербет
+       </div>
+       <a class="btn slide-btn" href="#">Давайте оба!</a>
     </div>
-    <input type="radio" name="point" id="slide1" checked>
-    <input type="radio" name="point" id="slide2">
-    <input type="radio" name="point" id="slide3">
     <div class="slides-controls">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-      <label for="slide3"></label>
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
     </div>
-    <!--
-  		<img class="right-img" src="http://placehold.it/150x100" width="150" height="100" alt="Крем-брюле">
-  		<img class="left-img" src="http://placehold.it/150x100" width="150" height="100" alt="Пломбир с малиновым джемом">
-  	</div>-->
-  	<div class="slides-name one-slide">
-  		<h1>
-  			Крем-брюле и пломбир с малиновым джемом
-  		</h1>
-  		<button class="btn" type="button">Давайте оба!</button>
-  	</div>
-    <!--
-    <div class="slides-name two-slide">
-      <h1>Шоколадный пломбир и лимонный сорбет</h1>
-      <button class="btn" type="button">Давайте оба!</button>
-    </div>
-    <div class="slides-name three-slide">
-      <h1>Пломбир с помадкой и клубничный щербет</h1>
-      <button class="btn" type="button">Давайте оба!</button>
-    </div>-->
-  </section>
+  </div>
   <!--Конец карусели-->
   <!--Акции-->
   <section class="stock clearfix">
@@ -101,7 +100,7 @@
   		<h2>Малинка даром!</h2>
   		<p>При покупке 2кг любого фруктового мороженого, добавим <br>
         в ваш заказ банку малинового варенья бесплатно.</p>
-  		<a href="#" class="btn-partition">Хочу варенье!</a>
+  		<a href="#" class="btn btn-partition">Хочу варенье!</a>
   	</div>
   	<div class="stock-right">
   		<h2>Шоколадки даром!</h2>
@@ -109,7 +108,7 @@
   			При покупке 2кг пломбира, добавим в ваш заказ упаковку <br> 
         вкуснейшей шоколадной присыпки совершенно бесплатно.
   		</p>
-  		<a href="#" class="btn-partition">Хочу шоколадки!</a>
+  		<a href="#" class="btn btn-partition">Хочу шоколадки!</a>
   	</div>
   </section>
   <!--Конец акций-->
@@ -118,58 +117,55 @@
   		<li class="hit-item">
   			<img src="img/hit-item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
   			<p>310 &#8381;/кг</p>
-  			<a href="#">
-  				Сливочное с апельсиновым <br> 
-          джемом и цитрусовой стружкой
+  			<a class="hit-name" href="#">
+  				Сливочное с апельсиновым джемом и цитрусовой стружкой
   			</a>
   		</li>
   		<li class="hit-item">
   			<img src="img/hit-item2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
   			<p>380 &#8381;/кг</p>
-  			<a href="#">
-  				Сливочно-кофейное с кусочками <br> 
-          шоколада
+  			<a class="hit-name" href="#">
+  				Сливочно-кофейное с кусочками шоколада
   			</a>
   		</li>
   		<li class="hit-item">
   			<img src="img/hit-item3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
   			<p>355 &#8381;/кг</p>
-  			<a href="#">
-  				Сливочно-клубничное с <br> 
-          присыпкой из белого шоколада
+  			<a class="hit-name" href="#">
+  				Сливочно-клубничное с присыпкой из белого шоколада
   			</a>
   		</li>
   		<li class="hit-item">
   			<img src="img/hit-item4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+
   			<p>415 &#8381;/кг</p>
-  			<a href="#">
-  				Сливочное крем-брюле с <br>
-          карамельной подливкой
+  			<a class="hit-name" href="#">
+  				Сливочное крем-брюле с карамельной подливкой
   			</a>
   		</li>
   	</ul>
   <!--Конец хитов-->
   <!--Информация о магазине-->
   <section class="info-shop clearfix">
-    <p>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+    <p >Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
   	<div class="info-left">
-  		<p>
+  		<p class="item-1">
   			Все наше мороженое изготавливается на собственном <br> 
         производстве, с использованием современного оборудования <br>
          и проверенных временем технологии.
   		</p>
-  		<p>
+  		<p class="item-2">
   			Для приготовления мороженого используются настоящие <br> 
         сливки и молоко высочайшего качества. Все дополнительные <br> ингридиенты и добавки произведены из натурального, <br>
         экологически чистого сырья. 
   		</p>
   	</div>
   	<div class="info-right">
-  		<p>
+  		<p class="item-3">
   			Закупка ингредиентов производится только у проверенных <br>
         фермерских хозяйств и компаний, с которыми нас связывает <br>долговременное сотрудничество.
   		</p>
-  		<p>
+  		<p class="item-4">
   			Доставка нашего мороженого до заказчиков осуществляется <br>
         в специальном термопаке, который не дает мороженому <br>
         растаять в пути и позволяет сохранить превосходный вкус.
@@ -191,7 +187,7 @@
   		</p>
   	    <form class="spread-form" action="https://echo.htmlacademy.ru" method="post">
   	        <input type="email" name="mail" placeholder="Электронная почта">
-  		    <button type="submit">Отправить</button>
+  		    <button class="btn btn-form" type="submit">Отправить</button>
   		</form>
   	</div>
   </section>
@@ -215,14 +211,16 @@
   <footer class="main-footer">
     <div class="container clearfix">
   	  <section class="footer-social">
-  		  <a class="social-btn social-btn-tv" href="#">Твиттер</a>
-  		  <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-  		  <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-  		  <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <div class="social">
+          <a class="social-btn social-btn-tv" href="#"><img src="img/tw.svg"></a>
+          <a class="social-btn social-btn-inst" href="#"><img src="img/inst.svg"></a>
+          <a class="social-btn social-btn-fb" href="#"><img src="img/fb.svg"></a>
+          <a class="social-btn social-btn-vk" href="#"><img src="img/vk.svg"></a>
+        </div>
   	  </section>
   	  <section class="footer-data">
         <div class="data-item">
-  		    <a href="#">Для поставщиков</a>
+  		    <a class="fournisseur" href="#">Для поставщиков</a>
   		    <a href="#">О производстве</a>
         </div>
         <div class="data-item">
@@ -232,7 +230,7 @@
   	  </section>
   	  <section class="footer-copyright">
   		  <a href="https://htmlacademy.ru">
-  			  <img src="img/logo-html.svg" width="150" height="100" alt="HTML Academy">
+  			  <img src="img/logo-html.svg" alt="HTML Academy">
   		  </a>
   		  <p>
   			  Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016
@@ -241,6 +239,7 @@
     </div>
   </footer>
   <!--Конец подвала страницы-->
-
+    </div>
+  </div>
   </body>
 </html>
