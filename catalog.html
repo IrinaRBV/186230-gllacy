@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Мороженое "Gllacy" каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -37,7 +39,7 @@
   	</nav>
     <div class="user-to">
   	  <div class="search">
-  	    <form action="https://echo.htmlacademy.ru" method="get">
+  	    <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
   			  <input type="search" name="search">
   		  </form>
   	  </div>
@@ -51,15 +53,14 @@
       <div class="mode">
         <p>
           С 10 до 20, ежедневно<br>
-          8 812 450-25-25
+          <span class="number-phone">8 812 450-25-25</span>
         </p>
       </div>
     </div>
   </header>
     <!--Содержимое страницы-->
   <main class="container clearfix">
-    <div class="breadcrumbs">
-        <ul class="menu-crumbs">
+        <ul class="breadcrumbs">
           <li>
             <a href="index.html">Главная</a>
           </li>
@@ -70,7 +71,6 @@
             <a href="#">Сливочное</a>
           </li>
         </ul> 
-    </div>
     <section class="filter">
       <h2>Сливочное мороженое</h2> 
       <form class="product-groups" action="https://echo.htmlacademy.ru" method="post">
@@ -83,46 +83,53 @@
               <option value="costly">Дорогие</option>
             </select>
           </figure>
-        <figure class="filter-item filter-range">
-          <legend>Цена:</legend>
-          <input class="price" type="text" name="price" id="price-1" value="100 руб.">
-          <input class="price" type="text" name="price" id="price-2" value="500 руб.">
-          <div class="range-controls">
-            <div class="line-controls">
-               <div class="line"></div>
+          <figure class="filter-item filter-range">
+            
+            <div class="price-controls">
+              <legend>Цена:</legend>
+              <label class="min-price"><input class="min-price" type="text" name="price" id="price-1" value="100 руб."></label>
+              <label class="max-price"><input class="max-price" type="text" name="price" id="price-2" value="500 руб."></label>
             </div>
+            <div class="range-controls">
+              <div class="line-controls">
+                <div class="line" style="margin-left: 39px; width: 78px" ></div>
+             </div>
             <div class="dot min-dot"></div>
             <div class="dot max-dot"></div>
           </div>
         </figure>
-        <figure class="filter-item filter-fat">
+        <figure class="filter-item">
           <legend>Жирность:</legend>
-          <input id="zero" type="radio" name="fat-content">
-          <label for="zero">0%</label>
-          <input id="ten" type="radio" name="fat-content" checked="checked">
-          <label for="ten">до 10%</label>
-          <input id="thirty" type="radio" name="fat-content">
-          <label for="thirty">до 30%</label>
-          <input id="more-thirty" type="radio" name="fat-content">
-          <label for="more-thirty">выше 30%</label>
+          <div class="filter-fat">
+            <input id="zero" type="radio" name="fat-content">
+            <label for="zero">0%</label>
+            <input id="ten" type="radio" name="fat-content" checked="checked">
+            <label for="ten">до 10%</label>
+            <input id="thirty" type="radio" name="fat-content">
+            <label for="thirty">до 30%</label>
+            <input id="more-thirty" type="radio" name="fat-content">
+            <label for="more-thirty">выше 30%</label>
+          </div>
        </figure>
       </div>
       <div class="filter-line">
-        <figure class="filter-item filter-filling">
-          <legend>Наполнители</legend>
-          <input id="chocolate" type="checkbox" name="stuffing" checked="checked">
-          <label for="chocolate">шоколадные</label>
-          <input id="sugar" type="checkbox" name="stuffing" checked="checked">
-          <label for="sugar">сахарные присыпки</label>
-          <input id="fruit" type="checkbox" name="stuffing">
-          <label for="fruit">фрукты</label>
-          <input id="syrup" type="checkbox" name="stuffing">
-          <label for="syrup">сиропы</label>
-          <input id="jam" type="checkbox" name="stuffing">
-          <label for="jam">джемы</label>
+        <figure class="filter-item">
+          <legend>Наполнители:</legend>
+          <div class="filter-filling">
+            <input id="chocolate" type="checkbox" name="stuffing" checked="checked">
+            <label for="chocolate">шоколадные</label>
+            <input id="sugar" type="checkbox" name="stuffing" checked="checked">
+            <label for="sugar">сахарные присыпки</label>
+            <input id="fruit" type="checkbox" name="stuffing">
+            <label for="fruit">фрукты</label>
+            <input id="syrup" type="checkbox" name="stuffing">
+            <label for="syrup">сиропы</label>
+            <input id="jam" type="checkbox" name="stuffing">
+            <label for="jam">джемы</label>
+          </div>
         </figure>
       </div>
-      <button type="submit" class="btn-filter">Применить</button>
+      <button type="submit" class="btn btn-filter">Применить</button>
       </form>
     </section>
     <!--Конец фильтра-->
@@ -131,127 +138,129 @@
         <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img1.png" width="267" height="267" alt="">
-            <p>310 &#8381;/кг</p>
+            <span class="prix">310 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
         <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img2.png" width="267" height="267" alt="">
-            <p>380 &#8381;/кг</p>
+            <span class="prix">380 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочно-кофейное с кусочками шоколада</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img3.png" width="266" height="267" alt="">
-            <p>355 &#8381;/кг</p>
+            <span class="prix">355 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img4.png" width="267" height="267" alt="">
-            <p>415 &#8381;/кг</p>
+            <span class="prix">415 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочное крем-брюле с карамельной подливкой</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img5.png" width="267" height="267" alt="">
-            <p>325 &#8381;/кг</p>
+            <span class="prix">325 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочное с брусничным джемом</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img6.png" width="267" height="267" alt="">
-            <p>410 &#8381;/кг</p>
+            <span class="prix">410 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочно-черничное с цельными ягодами черники</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img7.png" width="267" height="267" alt="">
-            <p>375 &#8381;/кг</p>
+            <span class="prix">375 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочно-лимонное с карамельной присыпкой</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img8.png" width="267" height="267" alt="">
-            <p>320 &#8381;/кг</p>
+            <span class="prix">320 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочное с шоколадной стружкой</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img9.png" width="267" height="267" alt="">
-            <p>440 &#8381;/кг</p>
+            <span class="prix">440 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочно-ванильное с кусочками шоколада</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img10.png" width="267" height="267" alt="">
-            <p>435 &#8381;/кг</p>
+            <span class="prix">435 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочное с ментоловым сиропом</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img11.png" width="267" height="267" alt="">
-            <p>355 &#8381;/кг</p>
+            <span class="prix">355 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочное с кусочками черного шоколада</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
          <article class="catalog-item">
           <div class="item-description">
             <img src="img/catalog-img12.png" width="267" height="267" alt="">
-            <p>420 &#8381;/кг</p>
+            <span class="prix">420 &#8381;/кг</span>
           </div>
           <div class="item-description">
             <p>Сливочное с мятным сиропом</p>
-            <a href="#" class="btn-description">Быстрый просмотр</a>
+            <a href="#" class="btn btn-description">Быстрый просмотр</a>
           </div>
         </article>
     </section>
     <!--Конец списка товаров-->
-    <div class="pages">
-      <ul>
+      <ul class="pages">
+        <li>
+          <a class="prev" href="#prev"></a>
+        </li>
         <li>
           <a href="#">1</a>
         </li>
@@ -267,8 +276,10 @@
          <li>
           <a href="#">5</a>
         </li>
+        <li>
+           <a class="next" href="#next"></a>
+        </li>
       </ul>
-    </div>
   </main>
   <!--Конец основного содержания страницы-->
   <!--Подвал страницы-->
