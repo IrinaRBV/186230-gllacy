@@ -19,16 +19,16 @@
        <header class="main-header">
   	     <div class="container clearfix">
          <div class="index-logo">
-           <a href="#">
              <img src="img/logo.svg" alt="Gllacy Shop">
-           </a>
          </div>
   	  <nav class="main-navigation">
   		  <ul class="main-menu">
   			  <li>
-  				  <a href="#">Каталог</a>
+            <a href="#">Каталог</a>
+            <div class="main-menu stripe"></div>
               <ul class="below-menu">
                 <li class="item-menu"><a href="#">Новинки</a></li>
+                <div class="below-menu stripe"></div>
                 <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
@@ -37,14 +37,17 @@
   			  </li>
   			  <li>
   				  <a href="#">Доставка и оплата</a>
+            <div class="main-menu stripe"></div>
   			  </li>
   			  <li>
   				  <a href="#"> О Компании</a>
+            <div class="main-menu stripe"></div>
   			  </li>
   		  </ul>
   	  </nav>
       <div class="user-to">
       <div class="search">
+        <div class="search-item"></div>
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
         <input type="search" name="search" placeholder="Что ищем?">
         </form>
@@ -118,7 +121,8 @@
   			<img src="img/hit-item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
   			<p>310 &#8381;/кг</p>
   			<a class="hit-name" href="#">
-  				Сливочное с апельсиновым джемом и цитрусовой стружкой
+  				<u>Сливочное с апельсиновым 
+            джемом и цитрусовой стружкой</u>
   			</a>
   		</li>
   		<li class="hit-item">
@@ -176,10 +180,12 @@
   <!--Раздел новостей-->
   <section class="news clearfix">
   	<div class="news-fresh">
-  		<p>Новое в нашем блоге<p>
-  		<a href="#">
-  			10 способов сервировки фруктовых щербетов к столу
-  		</a>
+      <div class="news-text">
+  		  <p>Новое в нашем блоге<p>
+  		  <a href="#">
+  			  10 способов сервировки фруктовых щербетов к столу
+  		  </a>
+      </div>
   	</div>
   	<div class="news-spread">
   		<p>
@@ -196,11 +202,16 @@
   <div class="index-content">
         <img src="img/map-marker.jpg" width="1200" height="430" alt="Карта" >
     <div class="address-content">
-    	<p>Адрес главного офиса и офлайн магазина:</p>
-    	<p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-    	<p>Для заказов по телефону:</p>
-    	<p>8 812-450-25-25</p>
-    	<p>(с 10 до 20 ежедневно)</p>
+      <div class="content-item">
+    	  <p>Адрес главного офиса <br> и офлайн магазина:</p>
+    	  <span>ул. Большая Конюшенная</span> 
+        <span>19/8, Санкт-Петербург</span>
+      </div>
+    	<div class="content-item"> 
+        <p>Для заказов по телефону:</p>
+    	  <span>8 812-450-25-25</span>
+    	  <p>(с 10 до 20 ежедневно)</p>
+      </div>
     	<a class="btn" href="#">Форма обратной связи</a>
     </div>
  </div>
@@ -211,28 +222,26 @@
   <footer class="main-footer">
     <div class="container clearfix">
   	  <section class="footer-social">
-        <div class="social">
-          <a class="social-btn social-btn-tv" href="#"><img src="img/tw.svg"></a>
-          <a class="social-btn social-btn-inst" href="#"><img src="img/inst.svg"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="img/fb.svg"></a>
-          <a class="social-btn social-btn-vk" href="#"><img src="img/vk.svg"></a>
-        </div>
+          <a class="social-btn social-btn-tv" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-vk" href="#"></a>
   	  </section>
   	  <section class="footer-data">
         <div class="data-item">
-  		    <a class="fournisseur" href="#">Для поставщиков</a>
-  		    <a href="#">О производстве</a>
+  		    <a class="link-item" href="#">Для поставщиков</a>
+  		    <a href="#">Наши документы</a>
         </div>
         <div class="data-item">
-  		    <a href="#">Наши документы</a>
+  		    <a href="#">О производстве</a>
   		    <a href="#">Экологические стандарты</a>
         </div>
   	  </section>
   	  <section class="footer-copyright">
-  		  <a href="https://htmlacademy.ru">
+  		  <a class="logo-copyright" href="https://htmlacademy.ru">
   			  <img src="img/logo-html.svg" alt="HTML Academy">
   		  </a>
-  		  <p>
+  		  <p class="text-copyright">
   			  Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016
   		  </p>
   	  </section>
