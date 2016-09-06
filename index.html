@@ -43,23 +43,30 @@
   		  </ul>
   	  </nav>
       <div class="user-to">
-      <div class="search">
+      <div class="search" >
         <a class="search-item"></a>
         <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
-        <input type="search" name="search" placeholder="Что ищем?">
-        </form>
+          <input class="inner-search" type="search" name="search" placeholder="Что ищем?">
+      </form>
       </div>
       <div class="user-block">
-        <a class="login-icon"></a>
         <a class="login" href="#">Вход</a>
+          <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
+            <input class="inner-mail" type="email" name="email" placeholder="Электронная почта">
+            <input class="inner-password" type="password" name="password" placeholder="Пароль">
+            <div class="link-login">
+              <a class="restore" href="#">Забыли пароль?</a>
+              <a class="restore" href="#">Новая регистрация</a>
+            </div>
+            <button class="btn btn-form" type="submit">Войти</button>
+          </form>
       </div>
       <div class="basket">
-        <a href="#">Пусто</a>
+        <a class="link-basket" href="#">Пусто</a>
       </div>
     </div>
       <div class="mode">
-        <p>
-          С 10 до 20, ежедневно<br>
+        <p>С 10 до 20, ежедневно <br>
           <span class="number-phone">8 812 450-25-25</span>
         </p>
       </div>
@@ -99,14 +106,14 @@
   <section class="stock clearfix">
   	<div class="stock-left">
   		<h2>Малинка даром!</h2>
-  		<p>При покупке 2кг любого фруктового мороженого, добавим <br>
+  		<p>При покупке 2 кг любого фруктового мороженого, добавим 
         в ваш заказ банку малинового варенья бесплатно.</p>
   		<a href="#" class="btn btn-partition">Хочу варенье!</a>
   	</div>
   	<div class="stock-right">
   		<h2>Шоколадки даром!</h2>
   		<p>
-  			При покупке 2кг пломбира, добавим в ваш заказ упаковку <br> 
+  			При покупке 2 кг пломбира, добавим в ваш заказ упаковку 
         вкуснейшей шоколадной присыпки совершенно бесплатно.
   		</p>
   		<a href="#" class="btn btn-partition">Хочу шоколадки!</a>
@@ -117,7 +124,7 @@
   	<ul class="hit">
   		<li class="hit-item">
   			<img src="img/hit-item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-  			<p>310 &#8381;/кг</p>
+  			<p>310 &#8381;<span class="hit-inner">/кг</span></p>
   			<a class="hit-name" href="#">
   				Сливочное с апельсиновым 
           джемом и цитрусовой стружкой
@@ -125,14 +132,14 @@
   		</li>
   		<li class="hit-item">
   			<img src="img/hit-item2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-  			<p>380 &#8381;/кг</p>
+  			<p>380 &#8381;<span class="hit-inner">/кг</span></p>
   			<a class="hit-name" href="#">
   				Сливочно-кофейное с кусочками шоколада
   			</a>
   		</li>
   		<li class="hit-item">
   			<img src="img/hit-item3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-  			<p>355 &#8381;/кг</p>
+  			<p>355 &#8381;<span class="hit-inner">/кг</span></p>
   			<a class="hit-name" href="#">
   				Сливочно-клубничное с присыпкой из белого шоколада
   			</a>
@@ -140,7 +147,7 @@
   		<li class="hit-item">
   			<img src="img/hit-item4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 
-  			<p>415 &#8381;/кг</p>
+  			<p>415 &#8381;<span class="hit-inner">/кг</span></p>
   			<a class="hit-name" href="#">
   				Сливочное крем-брюле с карамельной подливкой
   			</a>
@@ -149,27 +156,26 @@
   <!--Конец хитов-->
   <!--Информация о магазине-->
   <section class="info-shop clearfix">
-    <p >Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+    <p >Магазин Глейси  &#8212; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
   	<div class="info-left">
   		<p class="item-1">
-  			Все наше мороженое изготавливается на собственном <br> 
-        производстве, с использованием современного оборудования <br>
+  			Все наше мороженое изготавливается на собственном 
+        производстве, с использованием современного оборудования 
          и проверенных временем технологии.
   		</p>
   		<p class="item-2">
-  			Для приготовления мороженого используются настоящие <br> 
-        сливки и молоко высочайшего качества. Все дополнительные <br> ингридиенты и добавки произведены из натурального, <br>
+  			Для приготовления мороженого используются настоящие 
+        сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, 
         экологически чистого сырья. 
   		</p>
   	</div>
   	<div class="info-right">
   		<p class="item-3">
-  			Закупка ингредиентов производится только у проверенных <br>
-        фермерских хозяйств и компаний, с которыми нас связывает <br>долговременное сотрудничество.
+  			Закупка ингредиентов производится только у проверенных 
+        фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
   		</p>
   		<p class="item-4">
-  			Доставка нашего мороженого до заказчиков осуществляется <br>
-        в специальном термопаке, который не дает мороженому <br>
+  			Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому 
         растаять в пути и позволяет сохранить превосходный вкус.
   		</p>
   	</div>
@@ -178,12 +184,11 @@
   <!--Раздел новостей-->
   <section class="news clearfix">
   	<div class="news-fresh">
-      <div class="news-text">
-  		  <p>Новое в нашем блоге<p>
-  		  <a href="#">
-  			  10 способов сервировки фруктовых щербетов к столу
-  		  </a>
-      </div>
+  		  <p>Новое в нашем блоге <br>
+          <a href="#">
+            10 способов сервировки фруктовых щербетов <br> к столу
+          </a>
+        </p>
   	</div>
   	<div class="news-spread">
   		<p>
@@ -201,7 +206,7 @@
         <img src="img/map-marker.jpg" width="1200" height="430" alt="Карта" >
     <div class="address-content">
       <div class="content-item">
-    	  <p>Адрес главного офиса <br> и офлайн магазина:</p>
+    	  <p>Адрес главного офиса и <br> офлайн магазина:</p>
     	  <span>ул. Большая Конюшенная</span> 
         <span>19/8, Санкт-Петербург</span>
       </div>
@@ -308,5 +313,8 @@
   <!--Конец подвала страницы-->
     </div>
   </div>
+    <form class="popup">
+      <input class="icon-user" type="text" name="login" placeholder="Как вас зовут?">
+    </form>
   </body>
 </html>
