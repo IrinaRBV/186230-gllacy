@@ -412,7 +412,7 @@ h2 {
     padding-right: 34px;
     font-size: 14px;
     line-height: 16px;
-    background: #a0b3a9;
+    background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
     border-radius: 20px;
     text-decoration: none;
